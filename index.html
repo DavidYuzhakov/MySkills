@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231016071939" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20231016071939" />
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231016071939"></script>
+    <script defer src="https://kit.fontawesome.com/9cd0a1f323.js?_v=20231016071939" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20231016071939"></script>
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20231016071939">
+    <title>Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+    <div class="header__inner">
+        <div class="container">
+            <div class="header__body">
+                <a href="https://github.com/DavidYuzhakov" class="header__logo">
+                    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="Logo"></picture>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <div class="header__menu  menu">
+                    <button class="menu-icon">
+                        <span></span>
+                    </button>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a data-goto="#intro" class="menu__link" href="">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto="#drag" href="" class="menu__link">Drag & Drop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto="#timer" href="" class="menu__link">Timer</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto="#slider" href="" class="menu__link">Slider</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./gallery.html" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto="#notes" href="" class="menu__link">Notes App</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto="#weather" href="" class="menu__link">Weather App</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link" data-goto="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="main__intro  intro"  id="intro">
+        <div class="intro__container">
+            <div class="intro__item intro-1" style="background-image: url(img/intro/layer-1.jpg);"></div>
+            <div class="intro__item intro-2" style="background-image: url(img/intro/layer-2.png);"></div>
+            <div class="intro__item intro-3">
+                <div class="intro-content  ">
+                    <h1 class="intro-content__title  _anim-items _anim-no-hide">natural forest <span>My skills</span></h1>
+                    <div class="intro-content__text _anim-items _anim-no-hide">Creating a beautiful 3D block with a 'lens effect'. And, also, there's more.</div>
+                    <button class="intro-btn _anim-items _anim-no-hide" type="button"data-goto="#drag">Read More</button>
+                </div>
+            </div>
+            <div class="intro__item intro-4">
+                <canvas class="rain"></canvas>
+            </div>
+            <div class="intro__item intro-5" style="background-image: url(img/intro/layer-5.png);"></div>
+            <div class="intro__item intro-6" style="background-image: url(img/intro/layer-6.png);"></div>
+        </div>
+    </section>    
+
+    <main class="main">  
+        <section class="main__drag  drag" id="drag">
+            <div class="drag__container container">
+                <div class="drag__content">
+                    <h2 class="drag__title _title _anim-items _anim-no-hide">Drag & Drop</h2>
+                    <div class="drag__text _subtitle _anim-items _anim-no-hide">Drag and Drop interfaces enable applications to use drag-and-drop features in browsers. The user may select draggable elements with a mouse, drag those elements to a droppable element, and drop them by releasing the mouse button. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, ea.</div>
+                </div>
+                <div class="drag__main">
+                    <div class="drag-effect  drag-effect_1">
+                        <div class="drag__item">Drag</div>
+                        <div class="drag__item">And</div>
+                        <div class="drag__item">Drop</div>
+                    </div>
+                    <div class="drag-effect  drag-effect_2">
+                        <div class="drag-effect__row">
+                            <div class="drag-effect__col  drag-effect__col--1">Drag</div>
+                            <div class="drag-effect__col  drag-effect__col--2">And</div>
+                            <div class="drag-effect__col  drag-effect__col--3">Drop</div>
+                        </div>
+                        <div class="drag-effect__row">
+                            <div class="drag-effect__placeholder">
+                                <div class="drag-effect__item" draggable="true">Draggable</div>
+                            </div>
+                            <div class="drag-effect__placeholder"></div>
+                            <div class="drag-effect__placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__timer  timer" id="timer">
+            <div class="container">
+                <div class="timer__head">
+                    <h2 class="timer__title _title _anim-items _anim-no-hide">Countdown timer</h2>
+                    <div class="timer__text _subtitle _anim-items _anim-no-hide">Countdown timer - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sunt obcaecati eveniet beatae eos excepturi ipsa, incidunt voluptatibus, animi perspiciatis officia fugiat dicta fuga exercitationem a ut similique nesciunt inventore quo impedit doloremque.</div>
+                </div>
+                <div class="timer__content  content-timer">
+                    <h3 class="content-timer__title">New Year Countdown</h3>
+                    <div class="content-timer__group">
+                        <div class="content-timer__item">
+                            <span id="d"></span>
+                            <small class="content-timer__units">Days</small>
+                        </div>
+                        <div class="content-timer__item">
+                            <span id="h"></span>
+                            <small class="content-timer__units">Hours</small>
+                        </div>
+                        <div class="content-timer__item">
+                            <span id="m"></span>
+                            <small class="content-timer__units">Minutes</small>
+                        </div>
+                        <div class="content-timer__item">
+                            <span id="s"></span>
+                            <small class="content-timer__units">Seconds</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__cards  cards" id="slider">
+            <div class="container">
+                <div class="cards-content">
+                    <h2 class="cards-content__title _title _anim-items _anim-no-hide">Slider effect</h2>
+                    <div class="cards-content__text  _subtitle _anim-items _anim-no-hide">Slider effect - lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus hic enim, illum architecto ab commodi incidunt. Maiores rem repudiandae accusantium provident corporis reiciendis, quibusdam accusamus nobis voluptatem deserunt similique?</div>
+                </div>
+            </div>            
+            <div class="swiper cards-slider">
+                <div class="swiper-wrapper  cards-slider__wrapper">
+                    <div data-open="1" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/1.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="2" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/2.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="3" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/3.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="4" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/4.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="5" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/5.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="6" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/6.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="7" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/7.jpg')">
+                        </div>
+                    </div>
+                    <div data-open="8" class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/8.jpg')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper cards-slider-bg">
+                <div class="swiper-wrapper  cards-slider__wrapper">
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/1.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/2.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/3.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/4.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/5.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/6.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="20%" style="background-image: url('img/cards/7.jpg')">
+                        </div>
+                    </div>
+                    <div class="swiper-slide  cards-slider__item">
+                        <div class="cards-slider__img" data-swiper-parallax="30%" style="background-image: url('img/cards/8.jpg')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section class="main__notes notes" id="notes">
+            <div class="container">
+                <div class="notes__wrapper" id="app"></div>
+                <button type="button" id="toggle-btn" class="fas fa-sun notes__theme"></button>
+            </div>
+        </section>
+
+        <section class="main__weather weather" id="weather">
+            <div class="container">
+                <div class="weather__app" id="weather-app">
+                    <form class="weather__form" action="/">
+                        <input class="weather__input" type="text" maxlength="92" minlength="2">
+                        <button class="weather__btn" type="submit">search</button>
+                    </form>
+                    
+                    <!-- <div class="weather__error">The city was not found :(</div> -->
+                    <div id="weather-main">
+                        <div class="weather__loading">
+                            <picture><source srcset="img/load.webp" type="image/webp"><img src="img/load.webp" alt="loading"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <div class="footer__title">Who am I?</div>
+                <div class="footer__text">My dolor sit amet consectetur adipisicing elit. Voluptatem quo alias beatae earum aut repellat sint totam animi, non maxime ut blanditiis fuga similique? Repellendus eligendi similique perspiciatis ex quos?</div>
+            </div>
+            <div class="footer__social">
+                <h2 class="footer__title">My Social</h2>
+                <a class="footer__item" href="https://t.me/davidyuzhakov" target="_blank">Telegram <i class="fa-brands fa-telegram"></i></a>
+                <a class="footer__item" href="https://github.com/DavidYuzhakov" target="_blank">GitHub <i class="fa-brands fa-square-github"></i></a>
+                <a href="https://kwork.ru/frontend/27325223/kachestvennaya-verstka-sayta-html-css-i-js" class="footer__item" target="_blank">Kwork  <i style="font-weight: 600;">K</i></a>
+            </div>
+            <div class="footer__menu">
+                <h2 class="footer__title">Menu</h2>
+                <nav class="footer-menu menu-footer">
+                    <a class="footer__item" data-goto="#intro" href="">Home</a>
+                    <a class="footer__item" data-goto="#drag" href="">Drag & Drop</a>
+                    <a class="footer__item" data-goto="#timer" href="">Timer</a>
+                    <a class="footer__item" data-goto="#slider" href="">Slider</a>
+                    <a class="footer__item" href="./gallery.html" ">Gallery</a>
+                    <a class="footer__item" data-goto="#notes" href="">Notes App</a>
+                    <a class="footer__item" data-goto="#weather" href="">Weather App</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__copyright">© David Yuzhakov 2023</div>
+    </div>
+</footer>
+
+</div>    
+
+<div class="modal">
+    <div class="modal__container">
+        <div class="modal__img"></div>
+    </div>
+</div>
+
+
+<script src="js/app.min.js?_v=20231016071939"></script>
+</body>
+</html>
